@@ -1,0 +1,1226 @@
+* {
+    box-sizing: border-box;
+}
+
+/* CSSコード */
+html, body {
+  overflow-x: hidden;
+}
+
+
+html{
+  width: 100%;
+  height: 100%;
+  font-family: "Zen Old Mincho", serif;
+}
+
+.zen-old-mincho-regular {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* CSSコード */
+
+
+body {
+  font-size: 1.3rem;
+  margin: 0;
+  background-color:#e4dfcd;
+}
+
+h1{
+  font-size: 3.5rem;
+  margin: 0;
+
+
+
+}
+h2{
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+h3{
+  font-size: 1.0rem;
+  margin: 0;
+}
+
+
+p{
+  font-size: 0.8rem;
+}
+
+header {
+  height: 300px;
+  display: fixed;
+  flex-direction: row;
+  position: fixed;
+  padding: 10px;
+  align-items: center;
+  background: transparent;
+  z-index: 9999; 
+}
+
+
+
+/* ここから下がハンバーガーメニューに関するCSS */
+
+.nav-menu {
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  height: auto;
+  top: auto;
+}
+
+.hamburger {
+  display: none;
+}
+
+.nav-menu ul {
+  flex-direction: row;
+  align-items: center;
+  list-style:none
+  
+}
+
+.nav-menu a{
+  color: #ffffff;
+  text-decoration: none;
+}
+#close-btn {
+  display: none;
+}
+/* CSSコード */
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+#hero-section {
+  width: 100%;
+  position: relative;
+
+}
+
+.hero-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+
+}
+
+.hero-img {
+
+  background-position: center;
+}
+
+/* 画像を指定 */
+.img1 {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('img/coffee_steamed1.jpg');
+  background-repeat:no-repeat;
+
+  background-position: 50% 70%;
+  background-size: cover;
+  margin-top: 0;
+
+}
+
+
+
+.sticky1, .sticky2, .sticky3{
+  z-index: 1;
+}
+
+.logo {
+  padding:8px;
+  width: clamp(120px,90vw, 900px);
+  margin-top: -100px;
+  height: auto;
+  display: inline-block;
+  z-index: 10;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.hero-title{
+  color: #ffffff;
+  text-align: left;
+  font-size: 2.0rem;
+  line-height: 8.0rem;
+  padding: 200px 0px 0px 30px;
+  text-align: center;
+}
+
+.img2 {
+  width: 35%;
+  height: 40vh;
+  overflow: hidden; 
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-self:center;
+}
+
+.img_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img3 {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-image: url('img/img3.jpg');
+  background-size:100%;
+  background-repeat:no-repeat;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.catch{
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.173);
+  margin: 40px 0px 0px 50px;
+
+}
+.catch h2{
+  display: flex;
+  line-height: 2.4rem;
+  font-size: 2.8rem;
+  line-height: 2.0rem;
+  margin: 0 0 70px 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 3.0s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title-delay-0 {
+  transition-delay: 0.2s;
+}
+.title-delay-1 {
+  transition-delay: 0.7s;
+}
+.title-delay-3 {
+  transition-delay: 1.2s;
+}
+.title-delay-4 {
+  transition-delay: 1.7s;
+}
+
+#about_us{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_us_title_box h3{
+  margin-bottom: 150px;
+}
+
+.about_us_inner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  position: relative;
+}
+
+
+.cafe_image {
+  height: 350px;
+  width:50%;
+
+  text-align: right;
+}
+
+.cafe_image img{
+  width:60%;
+  justify-content: center;
+
+}
+
+
+.about_us_text_wrapper{
+  width: 50%;
+  line-height: 2.0rem;
+  padding: 50px;
+
+}
+
+.about_us_text_wrapper p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 2.0rem;
+}
+
+#story{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.story_aside{
+  display: flex;
+  width: 30%;
+  height: 138vh;
+  background-color: #491803;
+  justify-content: center;
+  align-items:flex-start;
+  position: relative;
+}
+
+.story_aside p{
+  font-size: 2.0rem;
+  color: #ffffff;
+
+}
+
+.story_main_contents{
+  width: 70%;
+  height: 138vh;
+
+}
+
+.abt_beans, .abt-roasting, .abt-folkhouse{
+  position: relative;
+}
+
+.abt_beans img, .abt-roasting img, .abt-folkhouse img{
+  width: 100%;
+  height: 46vh;
+  z-index: 1;
+  margin: 0;
+  display: block;
+  object-fit: cover;
+}
+
+.abt-beans_title,.abt-roasting_title, .abt-folkhouse_title{
+  font-size: 1.1rem;
+}
+
+.abt-beans_textbox, .abt-roasting_textbox, .abt-folkhouse_textbox{
+  position: absolute;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.6rem;
+  padding: 50px 110px;
+  z-index: 3;
+}
+
+.abt-beans_text, .abt-roasting_text,.abt-folkhouse_text{
+  font-size: 0.9rem;
+}
+
+.overlay{
+  position: absolute;
+  background-color: #0000003f;
+  inset: 0;
+  z-index: 2;
+  height: 46vh;
+}
+
+#img-photo_slider{
+
+background-color: #C06B4D;
+padding-bottom: 100px;;
+}
+/**************************************************************/
+.swiper-wrapper {
+  transition-timing-function: linear;
+  width: 100%;
+  background-color:#C06B4D ;
+}
+
+.img-photo_swiper {
+  /*スライダーの幅と高さを調整*/
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  /*スライド要素の幅と高さを調整*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slide_img{
+  width:100%;
+  height: auto;
+  object-fit: cover; /* 必要なら */
+}
+
+#products{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+}
+
+.product_img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  background-color: #2B4329;
+}
+
+.product_img img{
+
+  width:100%;
+  justify-content:right;
+  display: flex;
+
+}
+.products_aside{
+  display: flex;
+  justify-content:center;
+  align-items:flex-end;
+  width: 30%;
+  height: 90vh;
+  padding-bottom: 50px;
+}
+
+.goto-shop{
+  background-image: url("img/coffee.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  color: #ffffff;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 3.0s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in.delay-1 {
+  transition-delay: 0.3s;
+}
+
+.fade-in.delay-2 {
+  transition-delay: 1.0s;
+}
+
+
+
+.products_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: ao;
+  margin-top: 0px;
+  padding-bottom: 50px;
+}
+
+.product_main-title{
+  padding: 50px 0px;
+  position: relative;
+  margin-bottom: 150px;
+}
+.product_main-title p{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #301d1d;
+}
+
+.products_main_contents{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 100px 50px 50px 50px;
+}
+
+.products_box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 30px 0px;
+}
+
+.products_textbox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.products_title {
+  font-size: 1.0rem;
+  font-weight: 600;
+  color: #301d1d;
+}
+
+.products_text{
+  font-size: 0.9rem;
+  color: #301d1d;
+  font-weight: 500;
+}
+
+.products_imgbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  width: 20%;
+  height: 90vh;
+  padding: 35px 0px;
+}
+.gift_img{
+
+  width: 100%;
+}
+/******************************************************/
+.swiper {
+  /*スライダーの幅と高さを調整*/
+  width: 100%;
+  height: 830px;
+}
+
+.swiper-wrapper{
+  width: 100%;
+
+}
+
+.topics_swiper{
+  display: block;      
+  position: relative;   
+  z-index: 1;  
+
+  
+}
+
+
+.topics-pagination {
+
+  height: 50px;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 20px;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color:#ffffff;
+  }
+
+.topics_slide_img{
+  width: 100%;
+}
+.topics_slide_contents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C06B4D;
+  height: 100%;
+}
+
+.topics_slide_text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topics_slide_text-wrapper p{
+  font-size: 1.0rem;
+  color: #ffffff;
+}
+
+.swiper-button-next{
+  color: #ffffff;
+}
+
+.swiper-button-prev{
+  color:#ffffff;
+}
+
+#access{
+  background-color: #2B4329;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 200px;
+}
+
+.access_title{
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+.access_container{
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.access_text{
+  padding: 10px 30px;
+  width: 45%;
+  margin-top: 50px;
+  margin-right: 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 3.5rem;
+}
+
+
+.map{
+  width:60% ;
+  height:auto;
+  text-align: center;
+  padding: 55px;
+}
+
+.map img{
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1440px) {
+
+  .img1 {
+    background-image: url('coffee-steam.jpg');
+    margin-top: -40px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************************** 📱 タブレット用（768px以上 1024px以下） */
+/* === タブレット専用（iPad全般）=== */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* タブレット向け（iPad mini〜Pro含む） */
+
+  h1{
+    font-size: 4.0rem ; 
+    line-height: 6.0rem;
+  }
+
+
+  h3{
+    font-size: 1.5rem ;
+  }
+
+  p{
+    font-size:1.0rem ;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo {
+    padding:8px;
+    width: clamp(120px,90vw, 900px);
+    margin-top: 0px;
+    height: auto;
+    display: inline-block;
+    z-index: 10;
+  }
+  
+  .logo img{
+    width: 100%;
+  }
+  
+  .hero-section{
+    height: clamp(600px, 80vh, 950px); /* 画面ほぼ埋める */
+  }
+
+
+  .hero_title {
+    margin: 0;
+    padding:100px 0px 200px 50px;
+    font-size: 4.0rem;
+    line-height: 7.0rem;
+  }
+
+  .catch h2{
+    margin: 0px;
+    font-size: 2.0rem;
+    line-height: 4.5rem;
+    padding-left: 50px;
+  }
+
+  .cafe_image{
+    text-align: center;
+    width: 45%;
+  }
+
+  .cafe_image img{
+    width: 70%;
+  }
+
+  .about_us_text_wrapper {
+    padding: 20px;
+    width: 55%;
+  }
+
+
+
+  
+  .story_main_contents{
+    width: 75%;
+    height: 210vh;
+  
+  }
+  
+  .story_aside{
+    display: flex;
+    width: 25%;
+    height: 210vh;
+    background-color: #491803;
+    justify-content: center;
+    align-items:flex-start;
+    position: relative;
+  }
+  
+  .abt_beans img, .abt-roasting img, .abt-folkhouse img{
+    width: 100%;
+    height: 70vh;
+    z-index: 1;
+    margin: 0;
+    display: block;
+    object-fit: cover;
+  }
+
+
+  .overlay{
+    position: absolute;
+    background-color: #0000003f;
+    inset: 0;
+    z-index: 2;
+    height: 70vh;
+  }
+  
+  .abt-beans_textbox, .abt-roasting_textbox, .abt-folkhouse_textbox{
+    position: absolute;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding: 50px 80px;
+    z-index: 3;
+  }
+
+  .abt-beans_text, .abt-roasting_text,.abt-folkhouse_text{
+    margin-top: 50px;
+  }
+
+  .topics_slide_text-wrapper{
+    padding: 50px;
+  }
+  .access_text {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    margin-right: 20px;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------スマホ用---------------------------------------------*/
+/* タブレット・PC（横向き含む）ではハンバーガー非表示 */
+
+
+@media screen and (max-width: 767px) {
+  
+h1{
+  font-size: 2.0rem;
+  line-height: 3.2rem;
+  margin: 0;
+}
+
+  h3{
+    font-size: 1.3rem ;
+    margin: 0;
+  }
+
+  p{
+    font-size: 0.9rem;
+  }
+  .logo{
+    top: 20px;
+    width: clamp(120px, 80vw, 160px);
+  }
+  
+  /* ここから下がハンバーガーメニューに関するCSS */
+  
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color:#491803c5; /* ← これが覆ってる背景色だと思う！ */
+    z-index: 9999;
+    transition: top 0.3s ease;
+  }
+  
+  .nav-menu.open {
+    top: 0;
+  }
+
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px ;
+    height: 40px;
+    z-index: 99999;
+    padding: 0;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color:#491803;
+    margin: 5px auto;
+
+  }
+  
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color:#ffffff;
+    cursor: pointer;
+    z-index: 10001;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+
+  }
+
+  .nav-menu a {
+    color: #ffffff;
+    line-height: 2.5rem;
+    border-bottom: 1px solid  #ffffff;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    
+  }
+
+  .hero-img {
+
+    background-position: center;
+  }
+  
+  /* 画像を指定 */
+  .img1 {
+    width: 100%;
+    height: 600px;
+  }
+
+  .logo {
+    padding:8px;
+    width: clamp(120px, 100vw, 900px);
+    margin-top: -100px;
+    height: auto;
+    display: inline-block;
+    z-index: 100;
+    text-align: center;
+  }
+  
+  .logo img{
+    width: 90%;
+    
+  }
+  
+  .hero-title{
+    text-align: left;
+    padding: 140px 0px 0px 30px;
+    text-align: center;
+  }
+
+  .sticky1, .sticky2, .sticky3{
+    z-index: 1;
+  }
+
+  .img2 {
+    width: 50%;
+    margin-top: 150px;
+  }
+  
+  .img3 {
+    position: relative;
+    height: 500px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+  .catch{
+    margin: o auto;
+    text-align: center;
+    margin: 380px 40px 0px 40px;
+  }
+  .catch h2{
+    display: flex;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  
+  #about_us{
+    padding-bottom: 100px;
+  }
+  .about_us_title_box h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .about_us_inner{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    position: relative;
+  }
+
+  .about_us_text_wrapper{
+    width: 100%;
+    line-height: 2.0rem;
+    padding: 30px;
+  
+  }
+  
+  .about_us_text_wrapper p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 2.0rem;
+    letter-spacing: -0.03em;
+  }
+  
+  .cafe_image {
+    height: 350px;
+    width:70%;
+  }
+  
+  .cafe_image img{
+    width:100%;
+  }
+  
+  #story{
+    margin-top: 0;
+    width: 100%;
+  }
+  .story_aside{
+    display: flex;
+    width: 20%;
+    height: 360vh;
+    justify-content: center;
+    align-items:flex-start;
+    position: relative;
+    padding: 20px;
+  }
+
+  .story_aside p{
+    writing-mode: vertical-rl;
+  }
+
+  .story_main_contents{
+    width: 80%;
+    height: 360vh;
+  
+  }
+  
+  .abt_beans, .abt-roasting, .abt-folkhouse{
+    position: relative;
+  }
+  
+  .abt_beans img, .abt-roasting img, .abt-folkhouse img{
+
+    height: 120vh;
+    z-index: 1;
+    margin: 0;
+    display: block;
+    object-fit: cover;
+  }
+
+  .abt-beans_title,.abt-roasting_title, .abt-folkhouse_title{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  .abt-beans_textbox, .abt-roasting_textbox, .abt-folkhouse_textbox{
+    position: absolute;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.6rem;
+    z-index: 3;
+    padding: 30px 15px !important;
+  }
+
+  .overlay{
+    position: absolute;
+    background-color: #0000003f;
+    inset: 0;
+    z-index: 2;
+    height: 120vh;
+  }
+  
+  #products{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  
+  }
+
+  .products_aside {
+    height: auto;
+    width: 300px;
+  }
+
+  .goto-shop{
+    width: 250px;
+    height: 150px;
+    color: #ffffff;
+    margin-top: 50px;
+  }
+
+  .product_img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    background-color: #2B4329;
+  }
+  
+  .product_img img{
+  
+    width:100%;
+    justify-content:right;
+    display: flex;
+  
+  }
+  .products_aside{
+    order: 3;
+    margin: 100px;
+  }
+
+  .products_container{
+    order: 1;
+    width: 100%;
+  }
+
+  .products_imgbox{
+    order: 2;
+  }
+
+  .product_main-title{
+    margin-top: 20px;
+    position: relative;
+    margin-right: auto;
+    margin-left: 50px;
+  }
+
+  .products_main_contents{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 80px 30px 30px 30px;
+  }
+
+  .products_imgbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    width: 80%;
+    height: 50vh;
+    padding: 35px 0px;
+  }
+
+  .swiper {
+    /*スライダーの幅と高さを調整*/
+    width: 100%;
+    height:600px;
+  }
+  
+  .topics_slide_text-wrapper p{
+    font-size: 1.0rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+  }
+
+  .topics_slide_text-wrapper{
+    padding:20px 50px;
+  }
+  .swiper-pagination{
+
+    top: auto !important;
+    bottom: -10px !important;
+  }
+
+
+  .access_container{
+    width: 100%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .map{
+    width:100% !important;
+    height:auto;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .map img{
+    width: 80%;
+  }
+
+  .access_text{
+    width: 80%;
+    margin-top: 0;
+    font-size:0.9rem ;
+    line-height: 2.0rem;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

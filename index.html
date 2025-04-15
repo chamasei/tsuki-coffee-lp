@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://kit.fontawesome.com/bc0e8530bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>タイトル</title>
+
+</head>
+
+
+<body>
+  
+
+    <!-- ハンバーガーメニュー＆ナビゲーション -->
+  <header>    
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+
+    <nav class="nav-menu" id="nav-menu">
+      <button class="close-btn" id="close-btn">×</button>
+      <ul>
+        <li><a href="#About_Us">About Us</a></li>
+        <li><a href="#Story">Story</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#access">Access</a></li>
+        <li><a href="#SHOP" class="btn">SHOP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+      
+
+    <main>
+      
+      <div id="hero-section"><!-- トップ -->
+        <div class="hero-wrapper">
+          <div class="hero-img img1">
+            <div class="logo-catch sticky1">
+              <div class ="logo">
+                <img src="img/logo_landscape_white.png"alt="tsuki-coffee_logo">
+              </div>
+              <div class="hero-title">
+                <div class="">
+                    <h1>湯気の向こうに、</h1>
+                </div>
+                <div class="">
+                    <h1>満ちていく時間。</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-img img2">
+            <img src="img/coffee-beans.jpg" class ="img2_img" alt="coffee-beans.jpg">
+          </div>
+
+          <div class="hero-img img3">
+            <div class="catch">
+              <div class ="fade-in title-delay-3">
+                  <h2>築100年の古民家から、</h2>
+              </div>
+              <div class ="fade-in title-delay-4">
+                  <h2>やさしさ溢れる香りを</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="about_us" >
+        <div class="about_us_title_box sticky2">
+          <h3>About_Us</h3>
+        </div>
+        <div class="about_us_inner">
+          <div class="cafe_image">
+              <img src="img/table-scene.jpg" alt="cafe.jpg">
+          </div>
+          <div class="about_us_text_wrapper ">
+            <P>
+                築50年の古民家に、小さな焙煎所があります。<br>
+            ここは、かつてサラリーマンだった夫と、<br>
+            保育士だった妻がはじめた店。<br>
+            <br>
+
+            静かな暮らしと、本当に好きな仕事を求めて、<br>
+            二人はこの場所で、TSUKI COFFEEを開きました。<br>
+
+            毎朝、自分たちで淹れる一杯の香りに癒されながら、<br>
+            焙煎し、包み、そしてお届けする。<br>
+            <br>
+
+            月のように、満ちたり欠けたりする毎日の中で、<br>
+            ほんのひととき、心が満ちる時間をお届けできたら——<br>
+            <br>
+            そんな想いを豆に込めています。
+            </P>
+          </div>
+        </div>
+      </section>
+
+      <section id="story">
+          <div class="story_aside">
+              <div class="sticky3"><p>story</p></div>
+          </div>
+          <div class="story_main_contents">
+            <div class="abt_beans">
+              <div class="abt-beans_textbox">
+                <p class="abt-beans_title">豆についてのこだわり</p>
+                <p class="abt-beans_text">
+                    私たちのコーヒーは、豆を選ぶところから始まります。<br>
+                    <br>
+                    扱っているのは、顔の見える農園から届くシングルオリジン。<br>
+                    標高や気候、収穫時期によって変わる風味をひとつずつ味わいながら、<br>
+                    「この豆なら、きっとこんな時間に寄り添える」<br>
+                    そんなふうに想像しながら、ブレンドの組み合わせを考えています。<br>
+                    <br>
+                    大量生産には向かないけれど、<br>
+                    そのぶん小さな変化にも気づけることが、私たちの強みです。<br>
+                    一粒ひと粒に込められた想いごと、ていねいに焙煎しています。<br>
+                </p>
+              </div>
+              <img src="img/beans.jpg" alt="beans.jpg">
+              <div class="overlay"></div>
+            </div>
+            <div class="abt-roasting">
+              <div class="abt-roasting_textbox">
+                <p class="abt-roasting_title">焙煎についてのこだわり</p>
+                <p class="abt-roasting_text">
+                    焙煎は、豆と向き合う静かな時間です。<br>
+                    <br>
+                    毎日同じように見えて、実はまったく同じ焙煎はひとつもありません。<br>
+                    気温や湿度、豆の水分量、その日の空気感までもが、仕上がりに影響します。<br>
+                    <br>
+                    私たちは機械任せにはせず、目と耳と香りで焼き加減を見極めています。<br>
+                    パチパチと音を立てて豆が膨らむ瞬間、<br>
+                    甘く、ふくよかな香りがふわりと立ちのぼるタイミングを逃さないように。<br>
+                    <br>
+                    ゆっくりと火を通しながら、豆が持つ風味を静かに引き出していく。<br>
+                    その手間と時間が、一杯の中にやさしさとして残ると信じています。<br>
+                </p>
+              </div>
+              <img src="img/coffee-roast.jpg" alt="cafe.jpg">
+              <div class="overlay"></div>
+            </div>                                              
+            <div class="abt-folkhouse">
+              <div class="abt-folkhouse_textbox">
+                  <p class="abt-folkhouse_title">古民家のこと</p>
+                  <p class="abt-folkhouse_text">
+                    TSUKI COFFEE の焙煎所は、築50年の古民家をリノベーションした空間です。
+
+                      かつておばあちゃんが暮らしていたというこの家には、<br>
+                      どこか懐かしくて、やさしい空気が流れていました。<br>
+                      <br>
+                      都会を離れ、静かな暮らしを選んだとき、<br>
+                      この家と出会ったのは、偶然のようで必然だった気がします。<br>
+                      <br>
+                      土間には焙煎機を、縁側にはコーヒーの香りを。<br>
+                      古い柱や建具はできるだけ残し、<br>
+                      新しく加えるものは、時間が経っても馴染むように選びました。<br>
+                      <br>
+                      月の光が差し込む夜、ふとした瞬間に「ここで良かった」と思える場所。
+                      そんな空間から、一杯ずつコーヒーを届けています。<br>
+                  </p>
+              </div>
+              <img src="img/cafe.jpg" alt="folkhouse.png">
+              <div class="overlay"></div>
+            </div>
+          </div>
+      </section>
+
+      <section id="img-photo_slider">
+
+        <!-- Sliderを包むコンテナ要素 -->
+        <div class="img-photo_swiper">
+          <!-- スライド要素を包む要素 -->
+          <div class="swiper-wrapper">
+            <!-- 各スライド -->
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/cafe-image2.jpg" alt="cafe-image3.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/flesh_coffee_beans.jpg" alt="coffee-tree.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/coffeebeans.jpg" alt="coffee.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/coffee_steamed4.jpg" alt="coffee2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/viewimage.jpg" alt="coffee2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/cafe-image2.jpg" alt="cafe-image3.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/flesh_coffee_beans.jpg" alt="coffee-tree.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/coffeebeans.jpg" alt="coffee.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/coffee_steamed4.jpg" alt="coffee2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/viewimage.jpg" alt="coffee2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/cafe-image2.jpg" alt="cafe-image3.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/flesh_coffee_beans.jpg" alt="coffee-tree.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/coffeebeans.jpg" alt="coffee.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/coffee_steamed4.jpg" alt="coffee2.jpg">
+            </div>
+            <div class="swiper-slide">
+              <img class = "slide_img" src="img/viewimage.jpg" alt="coffee2.jpg">
+            </div>
+            <div class="swiper-slide">
+          </div>
+        </div>
+
+
+      </section>
+
+        <section id="products">
+
+          <div class="product_img"><img  src="img/product_img.jpg"></div>
+          <div class="products_aside">
+            <div class="goto-shop fade-in delay-1">Go to SHOP</div>
+          </div>
+          <div class="products_container">
+            <div class="product_main-title">
+              <p class="sticky4">Product</p>
+            </div>
+            <div class="products_main_contents">
+              <div class="products_box">
+                <div class="products_textbox">
+                  <p class="products_title">Mikazuki Blend（三日月ブレンド）</p>
+                  <p class="products_text">
+                      一日の終わりに、自分をねぎらうコーヒー。
+                      コクの中に、ほんのり甘みを感じる中深煎り。
+                      ミルクとも相性がよく、ほっとしたいときにおすすめ。
+                  </p>
+                </div>
+
+              </div>
+              <div class="products_box">
+                <div class="products_textbox">
+                  <p class="products_title">Mangetsu Blend（満月ブレンド）</p>
+                  <p class="products_text">
+                      特別な朝や、大切な人との時間に。
+                      フルーティーな香りと軽やかな口あたりが特徴の浅煎り。
+                      華やかさの中にも、TSUKI COFFEEらしいやさしさを。
+                  </p>
+                </div>
+              </div>                
+              <div class="products_box">
+                <div class="products_textbox">
+                  <p class="products_title">Gift Pack（季節限定ラッピング）</p>
+                  <p class="products_text">
+                      月の満ち欠けをモチーフにした、贈りもの用パッケージ。
+                      母の日、誕生日、引越し祝いなど、さまざまなシーンに。
+                      想いが伝わるコーヒーを、大切な人へ。
+                  </p>
+                </div>
+
+              </div>
+            </div>
+        </div>
+        <div class="products_imgbox">
+          <img class="gift_img fade-in delay-2" src="img/gift.jpg">
+        </div>
+      </section>
+
+
+      <section id="topics">
+
+        <!-- Sliderを包むコンテナ要素 -->
+        <div class="swiper topics_swiper">
+          <!-- スライド要素を包む要素 -->
+          <div class="swiper-wrapper">
+            <!-- 各スライド -->
+            <div class="swiper-slide">
+              <div class="topics_slide_contents">
+                <div class="topics_slide-img-wrap">
+                    <img class = "topics_slide_img" src="img/spring.jpg" alt="spring.jpg">
+                </div>
+                <div class="topics_slide_text-wrapper">
+                    <p class="topics_slide_title">母の日ギフト、受付中</p>
+                    <p class="topics_slide_text">
+                        季節限定のラッピングで、やさしさを贈るひとときを。
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="topics_slide_contents">
+                <div class="topics_slide-img-wrap">
+                    <img class = "topics_slide_img" src="img/mothersday.jpg" alt="mothersday.jpg">
+                </div>
+                <div class="topics_slide_text-wrapper">
+                    <p class="topics_slide_title">春のブレンド、できました。</p>
+                    <p class="topics_slide_text">
+                        今だけの味わいを、お気に入りの時間に添えて。
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="topics_slide_contents">
+                <div class="topics_slide-img-wrap">
+                    <img class = "topics_slide_img" src="img/marche.png" alt="marche.png">
+                </div>
+                <div class="topics_slide_text-wrapper">
+                    <p class="topics_slide_title">4/21 ○○マルシェに出店します</p>
+                    <p class="topics_slide_text">
+                        お近くの方は、ぜひ遊びにいらしてください。
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+              <!-- ページネーション -->
+          <div class="swiper-pagination topics-pagination"></div>
+          <!-- 前後の矢印 -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>               
+
+
+
+      </section>
+
+
+      <section id="access">
+        <div class="access_title">Access</div>
+        <div class="access_container">
+          <div class="map">
+            <img class="map_img" src="img/map.png">
+          </div>
+          <div class="access_text">
+            <p><center>Tsuki COFFEE</center><br>
+              <i class="fa-solid fa-house fa-lg" style="color: #f4f5f5;"></i>&emsp;**県**市**町*丁目**番地<br>
+              <i class="fa-solid fa-phone fa-lg" style="color: #f9fafa;"></i>&emsp; 0**-***-****
+            </p>          
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+  <script>
+
+
+//ハンバーガーメニュー
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+  const closeBtn = document.getElementById("close-btn");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+    hamburger.style.display = "none";
+  });
+
+  // メニュー内のリンクをクリックしたら閉じる
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("open");
+    });
+  });
+
+
+
+closeBtn.addEventListener("click", () => {
+  navMenu.classList.remove("open");
+  hamburger.style.display = "block"; 
+});
+
+
+
+
+
+gsap.registerPlugin(ScrollTrigger); // 必須！
+
+ScrollTrigger.matchMedia({
+
+  "(min-width: 768px)": function () {
+    gsap.to(".sticky1", {
+      y: 300,
+      scrollTrigger: {
+        trigger: ".sticky1",
+        start: "top 20%",
+        end: "+=1250",
+        scrub: true,
+        pin: true
+      }
+    });
+  },
+
+  "(max-width: 767px)": function () {
+    gsap.to(".sticky1", {
+      y: 100,
+      scrollTrigger: {
+        trigger: ".sticky1",
+        start: "top 20%",
+        end: "+=850",
+        scrub: true,
+        pin: true
+      }
+    });
+  }
+
+});
+
+
+
+gsap.to(".sticky2", {
+  scrollTrigger: {
+    trigger: ".sticky2",    
+    start: "top 30%",
+
+    end:"+=200",
+    scrub: true,
+    pin: true,
+    pinSpacing: false // ← 一旦 true で確認
+  }
+});
+
+gsap.to(".sticky3", {
+  scrollTrigger: {
+    trigger: ".sticky3",    
+    start: "top 30%",
+    endTrigger: ".story_aside",
+    end: "bottom 50%",
+    scrub: true,
+    pin: true,
+    pinSpacing: false // ← 一旦 true で確認
+  }
+});
+
+gsap.to(".sticky4", {
+  scrollTrigger: {
+    trigger: ".sticky4",    
+    start: "top 30%",
+    end:"+=180",
+    scrub: true,
+    pin: true,
+    pinSpacing: false // ← 一旦 true で確認
+  }
+});
+
+    const photo_swiper = new Swiper(".img-photo_swiper",{
+      loop: true,
+      pagination: false,
+      speed: 12000, // ループの時間
+      allowTouchMove: false, // スワイプ無効
+      autoplay: {
+      delay: 0,
+      },
+      slidesPerView: 2,
+        breakpoints: {
+    // スマホ用
+    0: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 2.3
+    },
+    1440: {
+      slidesPerView: 3
+    }
+  },
+
+    });
+
+    const swiper = new Swiper(".swiper",{
+      loop: true, // ループするかどうか
+      slidesPerView: 2,
+    });
+    
+
+const mySwiper = new Swiper('.topics_swiper', {
+        // オプション設定
+        loop: true, // ループするかどうか
+        slidesPerView: 1,
+        breakpoints: {
+          // スマホ用
+          0: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1440: {
+            slidesPerView: 3
+          }
+        },
+        pagination: {
+            el: '.topics-pagination',
+            clickable: true, // ページネーションをクリック可能にするかどうか
+        },
+        navigation: {
+            nextEl: '.topics_swiper .swiper-button-next',
+            prevEl: '.topics_swiper .swiper-button-prev'
+        }
+        });
+
+
+//fadein
+const fadeEls = document.querySelectorAll('.fade-in');
+
+const callback = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    }
+  });
+};
+
+const observer = new IntersectionObserver(callback, {
+  threshold: 0.1
+});
+
+fadeEls.forEach(el => observer.observe(el));
+
+
+
+
+
+const fadeTextEls = document.querySelectorAll('.fade-text');
+
+const fadeTextObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0.3) {
+      console.log('🚀 発火！');
+      entry.target.classList.add('active');
+    }
+  });
+}, {
+  threshold: [0, 0.1, 1],
+  rootMargin: '0px 0px -10% 0px',
+});
+
+
+// 🔥 ここで observer に登録＋位置を手動チェック！
+fadeTextEls.forEach(el => {
+  fadeTextObserver.observe(el);
+
+  const rect = el.getBoundingClientRect();
+  const inView = rect.top < window.innerHeight && rect.bottom > 0;
+  //if (inView) {
+  //  console.log('👀 最初から見えてたので強制発火');
+   // el.classList.add('active');
+ // }
+});
+
+
+
+
+//fade-up
+const fadeUps = document.querySelectorAll('.fade-up');
+
+const fadeUpObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+      // 一度だけ発火したい場合は以下を追加
+      fadeUpObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1
+});
+
+fadeUps.forEach(el => fadeUpObserver.observe(el));
+
+
+
+  </script>
+</body>
+ </html>
